@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- добавим стили mocha для отображения результатов -->
+  <link rel="stylesheet" href="./mocha.css">
+  <!-- добавляем сам фреймворк mocha -->
+  <script src="./mocha.js.Без названия"></script>
+  <script>
+    // включаем режим тестирования в стиле BDD
+    mocha.setup('bdd');
+  </script>
+  <!-- добавим chai -->
+  <script src="./chai.js.Без названия"></script>
+  <script>
+    // chai предоставляет большое количество функций. Объявим assert глобально
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+  <script>
+    function pow(x, n) {
+      let result = 1;
+
+      for (let i = 0; i < n; i++) {
+        result *= x;
+      }
+
+      return result;
+    }
+  </script>
+
+  <!-- скрипт со спецификацией (describe, it...) -->
+  <script src="./test.js.Без названия"></script>
+
+  <!-- элемент с id="mocha" будет содержать результаты тестов -->
+  <div id="mocha"><ul id="mocha-stats"><li class="progress"><canvas width="50" height="50"></canvas></li><li class="passes"><a href="javascript:void(0);">passes:</a> <em>5</em></li><li class="failures"><a href="javascript:void(0);">failures:</a> <em>0</em></li><li class="duration">duration: <em>0.01</em>s</li></ul><ul id="mocha-report"><li class="suite"><h1><a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow">pow</a></h1><ul><li class="test pass fast"><h2>1 в степени 3 будет 1<span class="duration">0ms</span> <a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow%201%20%D0%B2%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%203%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%201" class="replay">‣</a></h2><pre style="display: none;"><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre></li><li class="test pass fast"><h2>2 в степени 3 будет 8<span class="duration">0ms</span> <a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow%202%20%D0%B2%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%203%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%208" class="replay">‣</a></h2><pre style="display: none;"><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre></li><li class="test pass fast"><h2>3 в степени 3 будет 27<span class="duration">0ms</span> <a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow%203%20%D0%B2%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%203%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%2027" class="replay">‣</a></h2><pre style="display: none;"><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre></li><li class="test pass fast"><h2>4 в степени 3 будет 64<span class="duration">0ms</span> <a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow%204%20%D0%B2%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%203%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%2064" class="replay">‣</a></h2><pre style="display: none;"><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre></li><li class="test pass fast"><h2>5 в степени 3 будет 125<span class="duration">0ms</span> <a href="https://run.plnkr.co/preview/cm82hrxas00043574ajha440f/?grep=pow%205%20%D0%B2%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%203%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20125" class="replay">‣</a></h2><pre style="display: none;"><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre></li></ul></li></ul></div>
+
+  <!-- запускаем тесты! -->
+  <script>
+    mocha.run();
+  </script>
+
+
+</body></html>
